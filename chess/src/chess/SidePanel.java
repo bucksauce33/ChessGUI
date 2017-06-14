@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 public class SidePanel extends JPanel {
 	
     public SidePanel() {
-        setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        //setBorder(BorderFactory.createLineBorder(Color.BLACK));
     }
 
     @Override

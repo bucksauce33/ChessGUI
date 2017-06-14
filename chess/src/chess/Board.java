@@ -26,6 +26,9 @@ public class Board extends JComponent implements MouseListener, MouseMotionListe
 	private SidePanel player2Side;
 	private SquarePanel[][] squareBoard;
 	
+	public static final Color blueSquare = new Color(26, 133, 255);
+	public static final Color whiteSquare = new Color(230, 242, 255);
+	
 	public Board() {
 		chess = new Game();
 		

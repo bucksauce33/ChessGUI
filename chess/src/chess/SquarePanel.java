@@ -17,7 +17,6 @@ public class SquarePanel extends JPanel {
 	Image pieceImage;
 	
     public SquarePanel(int rank, int file) {
-    	setBorder(BorderFactory.createLineBorder(Color.BLACK));
         if (rank % 2 == 1) {
         	if (file % 2 == 0) {
         		light = true;
@@ -32,11 +31,11 @@ public class SquarePanel extends JPanel {
         	}
         }
         if (light) {
-        	squareColor = new Color(230, 242, 255);
+        	squareColor = Board.whiteSquare;
         } else {
-        	squareColor = new Color(26, 133, 255);
+        	squareColor = Board.blueSquare;
         }
-        
+        setBorder(BorderFactory.createLineBorder(Board.blueSquare));
     }
     
     public Piece getPieceOnSquare() {
@@ -58,7 +57,7 @@ public class SquarePanel extends JPanel {
         setBackground(squareColor);
         if (pieceOnSquare == null) {
         } else {
-        	pieceImage = pieceOnSquare.getImage().getScaledInstance(getWidth(), getHeight(), Image.SCALE_FAST);
+        	pieceImage = pieceOnSquare.getImage().getScaledInstance(getWidth(), getHeight(), Image.SCALE_SMOOTH);
         	g.drawImage(pieceImage, 0, 0, null);
         }
     }
