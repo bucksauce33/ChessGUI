@@ -110,5 +110,9 @@ public class Game {
 		return board;
 	}
 	
+//	public Piece move() {
+//		
+//		return null;
+//	}
 	
 }

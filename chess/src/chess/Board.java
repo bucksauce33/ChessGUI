@@ -2,8 +2,10 @@ package chess;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.GridLayout;
+import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -105,10 +107,19 @@ public class Board extends JComponent implements MouseListener, MouseMotionListe
 	
 	public static void main(String[] args) {
 		
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		double smallerDimension;
+		if (screenSize.getWidth() < screenSize.getHeight()) {
+			smallerDimension = screenSize.getWidth();
+		} else {
+			smallerDimension = screenSize.getHeight();
+		}
+		int displayLength = (int) (9.0 / 10 * smallerDimension);
+		
 		Board papaKaranGodOfBlitz = new Board();
 		papaKaranGodOfBlitz.displayPiecesOnBoard();
 		JFrame frame = new JFrame("CHESS");
-		frame.setSize(600, 600);
+		frame.setSize(displayLength, displayLength);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(papaKaranGodOfBlitz);
 		frame.setVisible(true);

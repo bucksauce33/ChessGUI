@@ -11,9 +11,9 @@ public class Knight extends Piece {
 		super(color, initialRank, initialFile);
 		try {
 		    if (super.getColor().isWhite()) {
-		    	super.setImage(ImageIO.read(new File("piece_images/WhiteKnight.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/WhiteKnight-min.png")));
 		    } else {
-		    	super.setImage(ImageIO.read(new File("piece_images/BlackKnight.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/BlackKnight-min.png")));
 		    }
 		} catch (IOException e) {
 			e.printStackTrace();

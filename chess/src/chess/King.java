@@ -14,9 +14,9 @@ public class King extends Piece {
 		moved = false;
 		try {
 		    if (super.getColor().isWhite()) {
-		    	super.setImage(ImageIO.read(new File("piece_images/WhiteKing.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/WhiteKing-min.png")));
 		    } else {
-		    	super.setImage(ImageIO.read(new File("piece_images/BlackKing.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/BlackKing-min.png")));
 		    }
 		} catch (IOException e) {
 			e.printStackTrace();

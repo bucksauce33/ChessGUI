@@ -11,9 +11,9 @@ public class Queen extends Piece {
 		super(color, initialRank, initialFile);
 		try {
 		    if (super.getColor().isWhite()) {
-		    	super.setImage(ImageIO.read(new File("piece_images/WhiteQueen.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/WhiteQueen-min.png")));
 		    } else {
-		    	super.setImage(ImageIO.read(new File("piece_images/BlackQueen.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/BlackQueen-min.png")));
 		    }
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -11,9 +11,9 @@ public class Bishop extends Piece {
 		super(color, initialRank, initialFile);
 		try {
 		    if (super.getColor().isWhite()) {
-		    	super.setImage(ImageIO.read(new File("piece_images/WhiteBishop.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/WhiteBishop-min.png")));
 		    } else {
-		    	super.setImage(ImageIO.read(new File("piece_images/BlackBishop.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/BlackBishop-min.png")));
 		    }
 		} catch (IOException e) {
 			e.printStackTrace();

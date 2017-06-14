@@ -14,9 +14,9 @@ public class Pawn extends Piece {
 		moved = false;
 		try {
 		    if (super.getColor().isWhite()) {
-		    	super.setImage(ImageIO.read(new File("piece_images/WhitePawn.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/WhitePawn-min.png")));
 		    } else {
-		    	super.setImage(ImageIO.read(new File("piece_images/BlackPawn.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/BlackPawn-min.png")));
 		    }
 		} catch (IOException e) {
 			e.printStackTrace();

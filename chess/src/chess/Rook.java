@@ -14,9 +14,9 @@ public class Rook extends Piece {
 		moved = false;
 		try {
 		    if (super.getColor().isWhite()) {
-		    	super.setImage(ImageIO.read(new File("piece_images/WhiteRook.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/WhiteRook-min.png")));
 		    } else {
-		    	super.setImage(ImageIO.read(new File("piece_images/BlackRook.png")));
+		    	super.setImage(ImageIO.read(new File("piece_images/BlackRook-min.png")));
 		    }
 		} catch (IOException e) {
 			e.printStackTrace();
