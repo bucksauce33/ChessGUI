@@ -1,7 +1,19 @@
-README
+README for Chess GUI
+
+Joe Buckley
+
+all code here is my own work, thus far at least
+first upload June 12 2017
+updated June 14 2017
+
+code found in src/chess
+images in piece_images
+main method in Board class
 
 + first uploaded draft of chess GUI
 + need more efficiency in paint methods -- takes too long to load
-+ must make each SquarePanel a mouselistener and 
+	- has been improved on but can still use more work, 
+	  especially w respect to image sizes
++ must make each SquarePanel a MouseListener and 
 connect SquarePanel array to array of pieces so pieces can move
 + working on sizing GUI to appropriate size of screens
