@@ -1,0 +1,7 @@
+README
+
++ first uploaded draft of chess GUI
++ need more efficiency in paint methods -- takes too long to load
++ must make each SquarePanel a mouselistener and 
+connect SquarePanel array to array of pieces so pieces can move
++ working on sizing GUI to appropriate size of screens
