@@ -6,7 +6,32 @@ public class Game {
 	private Player black = new Player(false);
 	
 	private Piece[][] board = new Piece[8][8];
-	// only need pieces, not square or board class
+	// only need piece array to convey relevant position info
+	
+	public Player getWhite() {
+		return white;
+	}
+	
+	public Player getBlack() {
+		return black;
+	}
+	
+	public Piece[][] getBoard() {
+		return board;
+	}
+	
+	public Piece setSquare(Piece selected, int fR, int fF) {
+		//fR is final rank, fF is final file
+		Piece occupied = board[fR][fF];
+		board[fR][fF] = selected;
+		//puts piece in new location
+		return occupied;
+		// returns Piece previously occupying that location
+	}
+	
+	public void setSquareNull(int rank, int file) {
+		board[rank][file] = null;
+	}
 	
 	public Game() {
 		for (int i = 0; i < 8; i++) {
@@ -71,17 +96,6 @@ public class Game {
 		}
 	}
 	
-//	public Board() {
-//		positions = new Square[8][8];
-//		for (int i = 0; i < 8; i++) {
-//			int rank = i + 1;
-//			for (int j = 0; j < 8; j++) {
-//				char file = (char) (j + 97);
-//				positions[i][j] = new Square(rank, file);
-//			}
-//		}
-//	}
-	
 	public void printBoard() {
 		for (int i = 0; i < 8; i++) {
 			int file = i + 1;
@@ -98,19 +112,9 @@ public class Game {
 		}
 	}
 	
-	public Player getWhite() {
-		return white;
-	}
-	
-	public Player getBlack() {
-		return black;
-	}
-	
-	public Piece[][] getBoard() {
-		return board;
-	}
-	
-//	public Piece move() {
+//	public Piece movePiece(int cR, int cF, int fR, int fF) {
+//		// cR is current rank, cF is current file
+//		// fF is final rank, fF is final file
 //		
 //		return null;
 //	}

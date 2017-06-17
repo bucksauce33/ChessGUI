@@ -33,13 +33,21 @@ public abstract class Piece {
 		return currentRank;
 	}
 	
+	public void setCurrentRank(int currentRank) {
+		this.currentRank = currentRank;
+	}
+	
 	public int getCurrentFile() {
 		return currentFile;
 	}
 	
-	public void move(int currentRank, int currentFile) { 
-		this.currentRank = currentRank;
+	public void setCurrentFile(int currentFile) {
 		this.currentFile = currentFile;
+	}
+	
+	public void move(int currentRank, int currentFile) { 
+		setCurrentRank(currentRank);
+		setCurrentFile(currentFile);
 	}
 	
 	public void setImage(BufferedImage img) {

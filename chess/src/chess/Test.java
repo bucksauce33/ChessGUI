@@ -1,14 +1,14 @@
 package chess;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
+//import java.awt.Dimension;
+//import java.awt.Toolkit;
 
 public class Test {
 
 	public static void main(String[] args) {
 		
-		//Game chess = new Game();
-		//chess.printBoard();
+		Game chess = new Game();
+		chess.printBoard();
 		
 		// java - get screen size using the Toolkit class
 		
@@ -19,13 +19,17 @@ public class Test {
 //		double y = 16 / 9.0;
 //		System.out.println(y);
 		
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		double smallerDimension;
-		if (screenSize.getWidth() < screenSize.getHeight()) {
-			smallerDimension = screenSize.getWidth();
-		} else {
-			smallerDimension = screenSize.getHeight();
-		}
+//		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+//		double smallerDimension;
+//		if (screenSize.getWidth() < screenSize.getHeight()) {
+//			smallerDimension = screenSize.getWidth();
+//		} else {
+//			smallerDimension = screenSize.getHeight();
+//		}
+		System.out.println("\n");
+		
+		chess.setSquare(chess.getBoard()[1][0], 3, 0);
+		chess.printBoard();
 		
 
 	}
