@@ -17,11 +17,13 @@ launching an instance of the GUI for you to use!
 
 ![GUI_in_action](screengrab.png)
 
+Click with the mouse to select a piece and click a square to move the piece to that square.
+
 Old Notes:
 
-code found in src/chess
-images in piece_images
-main method in Board class
+- code found in src/chess
+- images in piece_images
+- main method in Board class
 
 + first uploaded draft of chess GUI
 + need more efficiency in paint methods -- takes too long to load
