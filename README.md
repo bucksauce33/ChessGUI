@@ -29,11 +29,6 @@ Old Notes:
 + need more efficiency in paint methods -- takes too long to load
 	- has been improved on but can still use more work, 
 	  especially w respect to image sizes
-+ GUI does not yet work the way it should:
-	- framework is there
-	- must make each SquarePanel a MouseListener and 
-	  connect 8x8 SquarePanel array to array of pieces 
-	  (also 8x8, initially with 16 non-null Piece objects) so pieces can move
 + working on sizing GUI to appropriate size of screens
 	- using Toolkit to get user's screen dimension
 	- working from there using GridBagLayout to improve functionality and appearance
