@@ -15,6 +15,8 @@ $ java -cp bin chess.Board
 The first line will compile the program and the second will run the main method of the `Board` class,
 launching an instance of the GUI for you to use!
 
+![GUI_in_action](screengrab.png)
+
 Old Notes:
 
 code found in src/chess
